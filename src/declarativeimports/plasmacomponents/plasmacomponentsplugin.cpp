@@ -20,6 +20,7 @@
 #include "enums.h"
 #include "qmenu.h"
 #include "qmenuitem.h"
+#include "exclusivegroup.h"
 
 class BKSingleton
 {
@@ -72,6 +73,7 @@ void PlasmaComponentsPlugin::registerTypes(const char *uri)
 
     qmlRegisterType<QMenuProxy>(uri, 2, 0, "Menu");
     qmlRegisterType<QMenuItem>(uri, 2, 0, "MenuItem");
+    qmlRegisterType<ExclusiveGroup>(uri, 2, 0, "ExclusiveGroup");
 
     qmlRegisterType<Plasma::QRangeModel>(uri, 2, 0, "RangeModel");
 

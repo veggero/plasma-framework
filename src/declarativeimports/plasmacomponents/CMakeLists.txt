@@ -8,6 +8,7 @@ set(plasmacomponents_SRCS
     enums.cpp
     qmenu.cpp
     qmenuitem.cpp
+    exclusivegroup.h
     )
 
 add_library(plasmacomponentsplugin SHARED ${plasmacomponents_SRCS})
